@@ -1,0 +1,41 @@
+<html lang="en">
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sol 9</title>
+</head>
+
+<body>
+    <div>
+        <input id="1ip">
+        <input id="2ip">
+        <button onclick="add()">add</button>
+        <button onclick="mul()">multiply</button>
+        <p id="pid"></p>
+    </div>
+</body>
+<script>
+    var k = document.getElementById('pid')
+
+    function add() {
+        var i = document.getElementById('1ip').value
+        var j = document.getElementById('2ip').value
+
+        var res = parseInt(i) + parseInt(j);
+
+        k.innerHTML = `result: ${res}`
+    }
+
+    function mul() {
+        var i = document.getElementById('1ip').value
+        var j = document.getElementById('2ip').value
+
+        var res = i * j
+        k.innerHTML = `result: ${res}`
+    }
+</script>
+
+</html>

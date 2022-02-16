@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sol 6</title>
+</head>
+
+<body id="bid">
+    <div>
+        <button id="ip">click</button>
+        <button id="ia">clear</button>
+    </div>
+</body>
+
+<script>
+    var a = document.getElementById('ip')
+    var b = document.getElementById('bid')
+    var c = document.getElementById('ia')
+
+    function abc() {
+        b.style.backgroundColor = 'green'
+    }
+
+    function def() {
+        b.style.backgroundColor = 'white'
+    }
+
+    a.addEventListener('click', abc)
+    c.addEventListener('click', def)
+</script>
+
+</html>
